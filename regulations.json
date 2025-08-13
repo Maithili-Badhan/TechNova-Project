@@ -1,0 +1,110 @@
+{
+  "billboard_compliance_rules": [
+    {
+      "rule_id": "obscene_content",
+      "description": "Billboard content is obscene, indecent, sexually overt, promotes violence, drugs, alcohol, tobacco, or defames individuals/institutions.",
+      "banned_content_types": [
+        "obscene",
+        "pornographic",
+        "sexually_indecent",
+        "violence",
+        "hate_speech",
+        "drugs",
+        "alcohol",
+        "tobacco",
+        "defamation",
+        "cruelty_to_animals"
+      ],
+      "violation_message": "Billboard contains prohibited or obscene content."
+    },
+    {
+      "rule_id": "size_limits",
+      "description": "Billboard exceeds maximum allowed dimensions.",
+      "max_width_m": 6.0,
+      "max_height_m": 3.0,
+      "violation_message": "Billboard size exceeds permitted limits."
+    },
+    {
+      "rule_id": "proximity_location",
+      "description": "Billboard placed too close to junctions, signals, or in restricted zones.",
+      "min_distance_to_junction_m": 50,
+      "restricted_zones": [
+        "school",
+        "hospital",
+        "heritage_site",
+        "place_of_worship",
+        "national_park",
+        "district_forest",
+        "no_ad_zone"
+      ],
+      "violation_message": "Billboard placed in restricted zone or too close to junction."
+    },
+    {
+      "rule_id": "permit_qr_license",
+      "description": "Billboard lacks visible license, QR code, or registered agency details.",
+      "required_display": [
+        "license_number",
+        "QR_code",
+        "agency_name"
+      ],
+      "violation_message": "Billboard does not display required permit or QR code."
+    },
+    {
+      "rule_id": "structural_integrity",
+      "description": "Billboard fails structural safety or blocks signals/signs.",
+      "structural_safety_indicators": [
+        "leaning",
+        "rust",
+        "unstable_installation",
+        "missing_supports"
+      ],
+      "obstruction_types": [
+        "traffic_signal",
+        "road_sign",
+        "driver_visibility"
+      ],
+      "violation_message": "Billboard poses safety hazard or obstructs visibility."
+    },
+    {
+      "rule_id": "plastic_flex_environment",
+      "description": "Billboard uses banned plastic flex material or violates environmental board rules.",
+      "prohibited_material_types": [
+        "plastic_flex"
+      ],
+      "environmental_compliance": true,
+      "violation_message": "Billboard violates environmental material restrictions."
+    },
+    {
+      "rule_id": "digital_screen_regulation",
+      "description": "Digital billboard screens used without appropriate municipal approval.",
+      "digital_screen": true,
+      "special_approval_required": true,
+      "brightness_movement_limits": {
+        "brightness_nits_max": 350,
+        "movement_restricted": true
+      },
+      "violation_message": "Digital billboard used without permission or exceeds brightness/movement limits."
+    }
+  ],
+  "penalties": {
+    "unauthorized_installation": {
+      "action": "removal",
+      "fine_multiplier": 2,
+      "blacklisting": true,
+      "violation_message": "Unauthorized billboard: subject to removal, double fine, advertiser blacklisting."
+    },
+    "continuous_violations": {
+      "blacklisting_advertiser": true,
+      "ban_future_displays": true
+    }
+  },
+  "data_privacy_constraints": {
+    "facial_detection": "not permitted",
+    "public_surveillance_limits": "Anonymous citizen uploads only; no personal info stored",
+    "privacy_disclaimer": "Uploaded images are used solely for regulatory verification; no personal identifiers saved."
+  },
+  "update_policy": {
+    "allow_remote_update": true,
+    "policy_version": "2025.01"
+  }
+}
