@@ -1,6 +1,118 @@
 {
   "billboard_compliance_rules": [
     {
+      "rule_id": "material_ban_sup",
+      "description": "Billboards using plastic banners/flex of less than 100 microns thickness are strictly prohibited.",
+      "min_plastic_thickness_microns": 100,
+      "ban_date": "2022-07-01",
+      "reference": "Plastic Waste Management Rules 2016 (Amended 2021, 2022)[21][22][27]",
+      "violation_message": "Use of plastic flex/banner below 100 microns is banned; subject to fines and removal."
+    },
+    {
+      "rule_id": "material_epr_recycling",
+      "description": "Advertisers/printers/brand owners must comply with Extended Producer Responsibility (EPR) for plastic banners/flex, ensuring proper disposal, recycling, and reporting.",
+      "required_action": "EPR compliance (disposal, recycling, compliance reporting to SPCB/MoEFCC)",
+      "reference": "PWM Rules 2016 Sec 6 and amendments[21][27]",
+      "violation_message": "Non-compliance with EPR on plastic flex use results in legal penalty."
+    },
+    {
+      "rule_id": "size_limits_mumbai",
+      "description": "Maximum billboard size is 40ft x 40ft anywhere in Mumbai jurisdiction. No height above 100ft.",
+      "max_width_ft": 40,
+      "max_height_ft": 40,
+      "max_height_from_ground_ft": 100,
+      "reference": "BMC Draft Policy Guidelines 2024[26][29]",
+      "violation_message": "Exceeds city-permitted size or height for billboards."
+    },
+    {
+      "rule_id": "permit_renewal_frequency",
+      "description": "Advertising permits must be renewed every 3 months.",
+      "renewal_interval_months": 3,
+      "reference": "BMC Draft Policy Guidelines 2024[29]",
+      "violation_message": "Permit renewal overdue; violating city advertising rules."
+    },
+    {
+      "rule_id": "location_restriction",
+      "description": "No billboards on footpaths, roadways, traffic islands, or within restricted zones (schools, hospitals, heritage sites, parks).",
+      "restricted_locations": [
+        "footpaths",
+        "roadways",
+        "traffic_islands",
+        "school",
+        "hospital",
+        "heritage_site",
+        "park"
+      ],
+      "reference": "Multiple municipal outdoor advertising policies[4][26][29]",
+      "violation_message": "Billboard placed in a prohibited zone."
+    },
+    {
+      "rule_id": "structural_safety_clearance",
+      "description": "Structural Safety Certificate issued by qualified engineer is mandatory for large/roof-top hoardings.",
+      "required_certificate": "Structural Safety NOC",
+      "reference": "Municipal Engineering Dept./Municipal Acts[1][14]",
+      "violation_message": "No valid structural safety clearance provided."
+    },
+    {
+      "rule_id": "noc_authorities",
+      "description": "Billboards along highways/roads require NOC from Joint Commissioner of Police (Traffic), PWD/NHAI or relevant road authorities. Height clearance (if near airports) needed from AAI.",
+      "required_nocs": [
+        "Traffic Police for illuminated/digital hoardings",
+        "PWD/NHAI for road-side hoardings",
+        "Airports Authority of India for structures near airports"
+      ],
+      "reference": "BMC Draft Policy Guidelines 2024, Airport Authority Rules[29][30][34]",
+      "violation_message": "Missing NOC from statutory authority."
+    },
+    {
+      "rule_id": "digital_advertising_restriction",
+      "description": "Digital, LED, LCD, electronic hoardings must turn off by 11pm; no flickering or animated ads allowed.",
+      "operational_hours": "Turn off at 11pm",
+      "flickering_prohibited": true,
+      "reference": "BMC Draft Policy Guidelines 2024[29]",
+      "violation_message": "Digital billboard operational beyond allowed hours or not complying display rules."
+    },
+    {
+      "rule_id": "insurance_liability",
+      "description": "Advertisers must maintain insurance coverage between Rs 5 lakh and Rs 1 crore for damages caused by hoardings.",
+      "insurance_min_rs": 500000,
+      "insurance_max_rs": 10000000,
+      "reference": "BMC Draft Policy Guidelines 2024[29][33]",
+      "violation_message": "No insurance for accident/damage liability; subject to blacklisting."
+    },
+    {
+      "rule_id": "permit_qr_license_display",
+      "description": "All billboards must display valid municipal permit/license number, QR code, and agency details.",
+      "required_display": [
+        "permit_number",
+        "QR_code",
+        "agency_name"
+      ],
+      "reference": "Municipal Acts, local bye-laws[1][4]",
+      "violation_message": "Billboard does not display required official identifiers."
+    },
+    {
+      "rule_id": "municipal_tax_fee",
+      "description": "Advertisement tax/fee must be paid in advance as prescribed. Ad license fee increases by 10% annually.",
+      "payment_timing": "advance",
+      "annual_fee_increase_percent": 10,
+      "reference": "Municipal Corp Acts, BMC Guidelines[14][29]",
+      "violation_message": "Municipal tax/fee unpaid or payment overdue."
+    },
+    {
+      "rule_id": "content_compliance_asci",
+      "description": "All advertising content must be legal, truthful, not indecent/offensive, not harmful to children, not hazardous/anti-social.",
+      "content_rules": [
+        "no obscenity",
+        "no deception",
+        "no illegal product/service promotion",
+        "no misleading information",
+        "no harmful stereotypes"
+      ],
+      "reference": "ASCI Code for Self-Regulation in Advertising[8][13][18]",
+      "violation_message": "Content is illegal, misleading, or offensive as per ASCI standards."
+    },
+    {
       "rule_id": "obscene_content",
       "description": "Billboard content is obscene, indecent, sexually overt, promotes violence, drugs, alcohol, tobacco, or defames individuals/institutions.",
       "banned_content_types": [
@@ -18,7 +130,7 @@
       "violation_message": "Billboard contains prohibited or obscene content."
     },
     {
-      "rule_id": "size_limits",
+      "rule_id": "size_limits_generic",
       "description": "Billboard exceeds maximum allowed dimensions.",
       "max_width_m": 6.0,
       "max_height_m": 3.0,
@@ -38,16 +150,6 @@
         "no_ad_zone"
       ],
       "violation_message": "Billboard placed in restricted zone or too close to junction."
-    },
-    {
-      "rule_id": "permit_qr_license",
-      "description": "Billboard lacks visible license, QR code, or registered agency details.",
-      "required_display": [
-        "license_number",
-        "QR_code",
-        "agency_name"
-      ],
-      "violation_message": "Billboard does not display required permit or QR code."
     },
     {
       "rule_id": "structural_integrity",
@@ -93,6 +195,17 @@
       "blacklisting": true,
       "violation_message": "Unauthorized billboard: subject to removal, double fine, advertiser blacklisting."
     },
+    "environmental_violation": {
+      "fine_max_rs": 100000,
+      "imprisonment_possible": true,
+      "reference": "Environment (Protection) Act, PWM Rules[21][27]",
+      "violation_message": "Penalty for plastic rule violation: up to ₹1 lakh fine or imprisonment."
+    },
+    "insurance_noncompliance": {
+      "blacklisting_advertiser": true,
+      "ban_future_displays": true,
+      "reference": "BMC Policy 2024[29][33]"
+    },
     "continuous_violations": {
       "blacklisting_advertiser": true,
       "ban_future_displays": true
@@ -106,5 +219,287 @@
   "update_policy": {
     "allow_remote_update": true,
     "policy_version": "2025.01"
+  },
+  "billboard_regulations_india": {
+    "last_updated": "2025-08-13",
+    "source_note": "Based on official government regulations and municipal bylaws",
+    "districts": {
+      "kutch_gujarat": {
+        "state": "Gujarat",
+        "district": "Kutch (Kachchh)",
+        "governing_authority": "Kutch District Administration & Gujarat Urban Development Authority",
+        "primary_regulations": [
+          "Gujarat Comprehensive Development Control Regulations (GDCR) 2017",
+          "Plastic Waste Management Rules 2016 (Amended 2021, 2022)",
+          "Municipal Corporation Act",
+          "Environmental Protection Act 1986"
+        ],
+        "specifications": {
+          "size_limits": {
+            "marginal_space_billboards": {
+              "standard": "9.0m x 4.5m (for roads <12m width)",
+              "large": "12.0m x 6.0m (for roads >12m width)",
+              "rooftop_standard": "12m x 6m (for buildings <15m height)",
+              "rooftop_large": "18m x 9.0m (for buildings >15m height)"
+            },
+            "maximum_permitted": "18m x 9m"
+          },
+          "height_restrictions": {
+            "ground_mounted": {
+              "minimum_clearance": "3.0 meters from ground",
+              "maximum_height": "15.0 meters from ground level"
+            },
+            "rooftop_mounted": {
+              "minimum_margin": "1.5 meters from parapet",
+              "maximum_height_above_terrace": "10.5 meters"
+            }
+          },
+          "distance_requirements": {
+            "from_building_boundary": "0.6m minimum (standard), 1.5m (large)",
+            "from_intersections": "As per municipal bylaws",
+            "between_billboards": "Not specified - municipal discretion"
+          }
+        },
+        "fees_structure": {
+          "application_fee": "As per municipal schedule",
+          "development_permission": "Variable based on size and location",
+          "annual_renewal": "Required",
+          "note": "Specific amounts determined by local municipal corporation"
+        },
+        "penalties": {
+          "unauthorized_installation": "Removal + penalty as per municipal act",
+          "banned_material_use": "Up to ₹1 lakh fine + imprisonment (EP Act)",
+          "structural_violations": "Immediate removal order + costs recovery",
+          "environmental_violations": "₹1 lakh fine + EPR compliance required"
+        },
+        "prohibited_locations": [
+          "Heritage sites and archaeological areas",
+          "Traffic intersections (without clearance)",
+          "Areas obstructing traffic signals",
+          "Government building premises",
+          "Areas violating sight lines",
+          "Environmentally sensitive zones"
+        ],
+        "violatory_terms": [
+          "Installation without development permission",
+          "Use of plastic materials below 100 micron thickness",
+          "Advertising tobacco and liquor products",
+          "Structurally unsafe installations",
+          "Non-compliance with GDCR specifications",
+          "Obstruction of public safety"
+        ],
+        "application_process": {
+          "step_1": "Apply for development permission from competent authority",
+          "step_2": "Submit structural safety certificate",
+          "step_3": "Obtain environmental clearance",
+          "step_4": "Pay prescribed fees",
+          "step_5": "Install with municipal supervision",
+          "required_documents": [
+            "Site plan and layout",
+            "Structural drawings",
+            "Ownership documents",
+            "Environmental compliance certificate"
+          ]
+        }
+      },
+      "leh_ladakh_ut": {
+        "union_territory": "Ladakh",
+        "districts": "Leh and Kargil",
+        "governing_authority": "UT Ladakh Administration",
+        "primary_regulations": [
+          "Advertisement Policy of UT Ladakh 2021",
+          "Bureau of Outreach & Communication (BOC) Guidelines",
+          "Ministry of Information & Broadcasting Rules"
+        ],
+        "specifications": {
+          "size_limits": {
+            "note": "Sizes determined by Panel Advisory Committee (PAC)",
+            "standard_practice": "As per BOC/MIB approved formats"
+          },
+          "height_restrictions": {
+            "note": "Subject to environmental and safety clearance"
+          },
+          "distance_requirements": {
+            "note": "As per local administration guidelines"
+          }
+        },
+        "fees_structure": {
+          "empanelment_fee": "As prescribed by PAC",
+          "environmental_fee": "Mandatory for all installations",
+          "display_charges": "As per BOC rate card",
+          "green_fee": "Environmental compensation charges"
+        },
+        "penalties": {
+          "unauthorized_display": "Immediate removal + penalty",
+          "non_empanelled_agency": "Prohibition from future applications",
+          "rate_violations": "Contract termination + blacklisting",
+          "content_violations": "Content censorship + penalty"
+        },
+        "prohibited_locations": [
+          "Ecologically sensitive areas",
+          "Defence and security zones",
+          "Religious and cultural sites",
+          "Areas without environmental clearance",
+          "Tourist circuits (without special permission)"
+        ],
+        "violatory_terms": [
+          "Display by non-empanelled agencies",
+          "Installation without PAC approval",
+          "Non-payment of environmental fees",
+          "Content not meeting cultural standards",
+          "Violation of rate structures",
+          "Unauthorized extension of display period"
+        ],
+        "application_process": {
+          "step_1": "Agency empanelment with PAC",
+          "step_2": "Apply for site-specific approval",
+          "step_3": "Pay environmental and green fees",
+          "step_4": "Content approval from authorities",
+          "step_5": "Installation under administrative supervision",
+          "required_documents": [
+            "BOC empanelment certificate",
+            "Environmental impact assessment",
+            "Content approval certificate",
+            "Local administration NOC"
+          ]
+        }
+      },
+      "jaisalmer_rajasthan": {
+        "state": "Rajasthan",
+        "district": "Jaisalmer",
+        "governing_authority": "Jaisalmer Municipal Corporation/Council",
+        "primary_regulations": [
+          "Rajasthan Municipalities Advertisement Regulation Rules 2018",
+          "Municipal Corporation Act",
+          "Building Bylaws"
+        ],
+        "specifications": {
+          "size_limits": {
+            "large_format": {
+              "hoardings": "Maximum 30ft x 15ft, Minimum 16ft x 8ft",
+              "unipole": "Same as hoarding specifications"
+            },
+            "medium_format": {
+              "hoardings": "Maximum 15ft x 8ft, Minimum 8ft x 5ft"
+            },
+            "small_format": {
+              "hoardings": "Maximum 7ft x 5ft, Minimum as approved"
+            }
+          },
+          "height_restrictions": {
+            "ground_mounted": {
+              "minimum_clearance": "11 feet from ground",
+              "maximum_height": "70 feet from ground surface"
+            },
+            "building_mounted": {
+              "minimum_clearance": "11 feet from ground",
+              "maximum_above_terrace": "25 feet from terrace level"
+            }
+          },
+          "distance_requirements": {
+            "lateral_placement": {
+              "road_width_less_20m": "6 meters from road edge",
+              "road_width_20_30m": "10 meters from road edge",
+              "road_width_30_60m": "15 meters from road edge",
+              "road_width_above_60m": "50 meters from road edge"
+            },
+            "longitudinal_placement": {
+              "road_width_less_20m": "15 meters spacing",
+              "road_width_20_30m": "30 meters spacing",
+              "road_width_30_60m": "40 meters spacing",
+              "road_width_above_60m": "50 meters spacing"
+            },
+            "minimum_radial_distance": "50 meters from existing OMD"
+          }
+        },
+        "fees_structure": {
+          "agency_registration": {
+            "base_category": "As per municipal schedule",
+            "premier_category": "Higher fee structure"
+          },
+          "omd_permission": {
+            "private_land": "As per municipal tariff",
+            "public_land": "Auction based pricing"
+          },
+          "display_permission": "Separate fee structure",
+          "late_fees": "25% additional penalty",
+          "regularization_fee": "For unauthorized structures"
+        },
+        "penalties": {
+          "unauthorized_installation": "Immediate removal + penalty recovery",
+          "non_compliance": "Material confiscation + costs recovery",
+          "late_payment": "Punitive action after 60 days",
+          "safety_violations": "Removal within 3 days notice"
+        },
+        "prohibited_locations": [
+          "Zone D: Government offices, courts, schools, hospitals",
+          "Zone E: Heritage sites, forts, archaeological areas",
+          "Zone F: Parks, water bodies, sanctuaries",
+          "Zone G: Traffic islands, pedestrian paths",
+          "Areas obstructing traffic vision",
+          "Fire escape routes"
+        ],
+        "violatory_terms": [
+          "Installation without municipal registration",
+          "Display in prohibited zones",
+          "Unsafe structural design",
+          "Advertising restricted products",
+          "Non-payment of prescribed tariffs",
+          "Violation of size and placement norms"
+        ],
+        "application_process": {
+          "step_1": "Agency registration with municipality",
+          "step_2": "Site selection and approval",
+          "step_3": "Structural design approval",
+          "step_4": "Payment of fees and charges",
+          "step_5": "Installation with municipal inspection",
+          "step_6": "Display content approval",
+          "renewal": "Annual renewal mandatory"
+        }
+      },
+      "jodhpur_rajasthan": {
+        "state": "Rajasthan",
+        "district": "Jodhpur",
+        "governing_authority": "Jodhpur Municipal Corporation/Development Authority",
+        "primary_regulations": [
+          "Rajasthan Municipalities Advertisement Regulation Rules 2018",
+          "Jodhpur Development Authority Act",
+          "Municipal Corporation Building Bylaws"
+        ],
+        "specifications": {
+          "size_limits": "Same as Jaisalmer (Rajasthan state rules)",
+          "height_restrictions": "Same as Jaisalmer (Rajasthan state rules)",
+          "distance_requirements": "Same as Jaisalmer (Rajasthan state rules)"
+        },
+        "fees_structure": "Same as Jaisalmer with local variations",
+        "penalties": "Same as Jaisalmer (Rajasthan state rules)",
+        "prohibited_locations": "Same as Jaisalmer plus JDA specific restrictions",
+        "violatory_terms": "Same as Jaisalmer (Rajasthan state rules)",
+        "application_process": "Same as Jaisalmer with JDA coordination"
+      }
+    },
+    "common_national_regulations": {
+      "plastic_waste_management": {
+        "banned_materials": "Plastic flex/banners below 100 micron thickness",
+        "epr_compliance": "Extended Producer Responsibility for advertisers",
+        "penalties": "Up to ₹1 lakh fine + imprisonment"
+      },
+      "asci_guidelines": {
+        "content_standards": "Truthful, non-misleading, non-offensive",
+        "prohibited_content": "Tobacco, liquor (with restrictions)",
+        "complaints_mechanism": "Self-regulatory body enforcement"
+      },
+      "supreme_court_directions": {
+        "road_safety": "No obstruction to traffic signals or vision",
+        "structural_safety": "Mandatory structural stability certificates",
+        "environmental_compliance": "Environmental clearance for large installations"
+      }
+    },
+    "enforcement_mechanism": {
+      "municipal_enforcement": "Local body inspection teams",
+      "environmental_enforcement": "State Pollution Control Board",
+      "legal_remedies": "Appeals to municipal tribunal/courts",
+      "complaint_mechanism": "Municipal helpline + ASCI complaints"
+    }
   }
 }
