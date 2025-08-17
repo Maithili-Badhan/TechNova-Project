@@ -1,0 +1,572 @@
+[
+    {
+        "time": "2025-08-17 12:24:50",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7318503260612488,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:50",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7319988012313843,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:50",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7470977902412415,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:51",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7276819348335266,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:51",
+        "bbox": [
+            1,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.6798964738845825,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:51",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.6432322859764099,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:52",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.5863611698150635,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:53",
+        "bbox": [
+            437,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7173935174942017,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:53",
+        "bbox": [
+            9,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7814465761184692,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:53",
+        "bbox": [
+            15,
+            169,
+            638,
+            480
+        ],
+        "confidence": 0.7463387250900269,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:53",
+        "bbox": [
+            0,
+            155,
+            637,
+            480
+        ],
+        "confidence": 0.7003963589668274,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:55",
+        "bbox": [
+            3,
+            121,
+            640,
+            480
+        ],
+        "confidence": 0.8631068468093872,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:24:58",
+        "bbox": [
+            1,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.6848453283309937,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:02",
+        "bbox": [
+            1,
+            135,
+            640,
+            480
+        ],
+        "confidence": 0.6593652367591858,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:03",
+        "bbox": [
+            4,
+            0,
+            640,
+            471
+        ],
+        "confidence": 0.7150617241859436,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:04",
+        "bbox": [
+            30,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.5684731602668762,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:11",
+        "bbox": [
+            11,
+            5,
+            640,
+            480
+        ],
+        "confidence": 0.7986113429069519,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:11",
+        "bbox": [
+            26,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.4278087019920349,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:12",
+        "bbox": [
+            202,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.5364103317260742,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:12",
+        "bbox": [
+            3,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7467304468154907,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:13",
+        "bbox": [
+            0,
+            0,
+            639,
+            480
+        ],
+        "confidence": 0.558098316192627,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:13",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.8225323557853699,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:13",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.8255564570426941,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:14",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7929236888885498,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:14",
+        "bbox": [
+            2,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.4506790339946747,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:14",
+        "bbox": [
+            1,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.44884002208709717,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:15",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.4629778265953064,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:15",
+        "bbox": [
+            5,
+            0,
+            576,
+            480
+        ],
+        "confidence": 0.6127855777740479,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:16",
+        "bbox": [
+            28,
+            157,
+            639,
+            480
+        ],
+        "confidence": 0.7174690365791321,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:16",
+        "bbox": [
+            29,
+            22,
+            640,
+            480
+        ],
+        "confidence": 0.4835825562477112,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:16",
+        "bbox": [
+            0,
+            186,
+            635,
+            480
+        ],
+        "confidence": 0.6130314469337463,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:19",
+        "bbox": [
+            0,
+            0,
+            636,
+            334
+        ],
+        "confidence": 0.8298205733299255,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:26",
+        "bbox": [
+            1,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.6545105576515198,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:27",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.602648138999939,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:27",
+        "bbox": [
+            0,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.7221823930740356,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:27",
+        "bbox": [
+            1,
+            0,
+            640,
+            480
+        ],
+        "confidence": 0.4609934389591217,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:28",
+        "bbox": [
+            1,
+            0,
+            639,
+            480
+        ],
+        "confidence": 0.4941621422767639,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    },
+    {
+        "time": "2025-08-17 12:25:28",
+        "bbox": [
+            0,
+            7,
+            640,
+            480
+        ],
+        "confidence": 0.40105241537094116,
+        "class_id": 0,
+        "class_name": "billboard",
+        "violations": [
+            "Billboard size exceeds permitted limits."
+        ]
+    }
+]
